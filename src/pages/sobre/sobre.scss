@@ -1,0 +1,15 @@
+page-sobre {
+  .bloco_teste{
+    width: 100%;
+    height: 15vh;
+    margin-top: 50px;
+    background-image: url("../../assets/imgs/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .toolbar-background-md{
+    background-color: $main;
+    font-size: 1.7rem;
+  }
+}

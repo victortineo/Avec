@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides pager>
+
+    <ion-slide *ngFor="let photo of gallery_list">
+      <img [src]="'http://static.salaovip.com.br/saloes/vip/galeria/originais/' + photo.foto">
+    </ion-slide>
+
+  </ion-slides>
+
+  <div class="text-box">
+  <p class="text-center">
+    Bem vindo ao nosso aplicativo.
+    Acima você pode rolar as imagens e ver algumas de nossas fotos.
+    No menu você pode acessar nossos links rápidos e abaixo você pode seguir nossas redes sociais, obrigado.
+  </p>
+  </div>
+
+
+
+
+  <div class="social_icons">
+  <a href="  https://www.facebook.com/AvecBrasil/" target="_blank">
+      <span class="icon logo-facebook"></span>
+  </a>
+  <a href="  https://www.linkedin.com/company/3271088/" target="_blank">
+    <span class="icon logo-linkedin"></span>
+  </a>
+  <a href="  https://www.instagram.com/avecbrasil/" target="_blank">
+    <span class="icon logo-instagram"></span>
+  </a>
+</div>
+</ion-content>
